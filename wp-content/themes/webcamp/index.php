@@ -5,7 +5,7 @@
 			<section id="newsletter_sub">
 				<div class="inner_wrap cf">
 					<p>Ostani u toku. Pretplati se na newsletter.</p>
-					<form method="post" action="#" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<form method="post" action="http://webcampzg.us7.list-manage1.com/subscribe/post?u=9390a854a4f6130f215f417ef&amp;id=38307cb9bd" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 						<fieldset>
 							<input id="newsletter-box" name="EMAIL" type="text" class="text" placeholder="Upiši svoju e-mail adresu" />
 							<button class="submit right-circle-icon" type="submit"><span>pošalji</span></button>
