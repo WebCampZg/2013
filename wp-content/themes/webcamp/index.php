@@ -21,7 +21,7 @@
 					<div class="inner_wrap_02">
 
 						<?php
-							query_posts('showposts=3&cat=1');
+							query_posts('showposts=3&cat=3');
 							if ( have_posts() ): while ( have_posts() ): the_post();
 						?>
 
