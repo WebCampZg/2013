@@ -51,50 +51,112 @@
 
 		</div>
 
+        <?php
+            $talks = array();
+            $schedule = array();
+        
+            $posts = get_posts(array(
+                'posts_per_page' => -1,
+                'post_type' => 'speakers'
+            ));
+            
+            $timeZone = new \DateTimeZone('Europe/Zagreb');
+            
+            foreach ($posts as $post) {
+                $custom = get_post_custom();
+                
+                // Talk scheduled time
+                $time = null;
+                if (!empty($custom['wpcf-time'][0])) {
+                    $timestamp = $custom['wpcf-time'][0];
+                    $time = date('H:i', $timestamp);
+                }
+                
+                // On which track 
+                $track = isset($custom['wpcf-track'][0]) ? $custom['wpcf-track'][0] : null;
+               
+                // Collect all needed data
+                $talk = (object) array(
+                    'speaker' => $post->post_title,
+                    'title' => $custom['wpcf-title'][0],
+                    'twitter' => $custom['wpcf-twitter'][0],
+                    'time' => $time,
+                    'abstract' => $custom['wpcf-abstract'][0],
+                    'biography' => $post->post_content,
+                    'track' => $track,
+                    'level' => $custom['wpcf-level'][0],
+                    'url' => get_post_permalink($post->ID),
+                    'thumbnail' => get_the_post_thumbnail($post->ID),
+                );
+
+                $talks[] = $talk;
+                
+                if (isset($time) && isset($track)) {
+                    $schedule[$time][$track] = $talk;
+                }
+            }
+            
+        ?>
+        
 		<div class="speaker_block">
-
 			<div class="fluid_grid">
-
-				<?php
-					query_posts('showposts=-1&post_type=speakers');
-					if ( have_posts() ):
-				?>
 				<ul>
-					<?php while (have_posts()) : the_post(); ?>
+                    <?php foreach ($talks as $talk) { ?>
 					<li>
-						<a href="<?php the_permalink() ?>" class="box">
-							<?php the_post_thumbnail('thumbnail'); ?>
-							<div class="data"><div><p><strong><?php the_title(); ?></strong> <?php echo get_post_meta($post->ID,'wpcf-title',TRUE) ?></p></div></div>
+						<a href="<?= $talk->url ?>" class="box">
+							<?= $talk->thumbnail ?>
+							<div class="data"><div><p><strong><?= $talk->speaker ?></strong> <?= $talk->title ?></p></div></div>
 						</a>
+                        <?php } ?>
 					</li>
-					<?php endwhile; ?>
 				</ul>
-				<?php
-					endif;
-					wp_reset_query();
-				?>
-
 			</div>
-
 		</div>
 
+        <?php /* REMOVE COMMENTS TO DISPLAY SCHEDULE
 
-		<?php
-			$postid = url_to_postid( 'raspored' );
-			$queried_post = get_post($postid);
-		?>
 		<div class="lectures_block">
 			<div class="inner_wrap">
 
-				<h2><?php echo $queried_post->post_title; ?></h2>
+				<h2>Raspored predavanja</h2>
 
 				<strong class="mark h_a">Dvorana <b>A</b></strong>
 				<strong class="mark h_b">Dvorana <b>B</b></strong>
 
-				<?php echo $queried_post->post_content; ?>
+				<ul>
+					<li>
+						<article>
+							<time>09:00</time>
+							<p>Akreditacije i druženje</p>
+						</article>
+					</li>
+					<li>
+						<article>
+							<time>09:30</time>
+							<p>Otvaranje konferencije</p>
+						</article>
+					</li>
 
+                    <?php foreach($schedule as $time => $timeTalks) { ?>
+					<li>
+						<article>
+							<time><?= $time ?></time>
+                            <?php foreach($timeTalks as $track => $talk) { ?>
+							<div class="hall_<?= $track == 1 ? 'a' : 'b' ?>">
+								<p>
+									<a href="<?= $talk->url ?>">
+										<?= $talk->title ?>
+										<strong><?= $talk->speaker ?></strong>
+									</a>
+								</p>
+							</div>
+                            <?php } ?>
+						</article>
+					</li>
+                    <?php } ?>
+				</ul>
 			</div>
 		</div>
-		<?php wp_reset_query(); ?>
+        */ ?>
 
 <?php get_footer(); ?>
