@@ -42,11 +42,9 @@
 
 					</div>
 
-					<?php /*
-					<div class="show_more">
-						<a href="#" class="down-icon">Prikaži još vijesti</a>
+					<div class="show_more_news">
+						<a href="novosti">Prikaži starije vijesti</a>
 					</div>
-					*/ ?>
 
 				</div>
 			</div>

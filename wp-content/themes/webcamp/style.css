@@ -224,6 +224,11 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .news_block .show_more a:hover { color: #222; }
 .news_block .show_more a:before { position: absolute; bottom: 25px; left: 50%; margin-left: -5px; }
 
+.news_block .show_more_news { font-size: 13px; line-height: 35px; text-transform: uppercase; text-align: center }
+.news_block .show_more_news a { color: #5fa6d3 }
+.news_block .show_more_news a:hover { color: #222 }
+
+
 @media screen and (max-width: 800px) {
 
   .news_block article { padding: 20px; }
