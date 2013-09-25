@@ -361,7 +361,9 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .sponsors_block .main { margin-bottom: 30px; }
 .sponsors_block a { display: inline-block; vertical-align: middle; padding: 10px; margin: 5px; transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; }
 .sponsors_block a:hover { opacity: .5; }
-.sponsors_block img { display: block; }
+
+.sponsors_block img { display: block; width: 165px }
+.sponsors_block .main img { width: 350px; margin: 0 30px; }
 
 /*********** SOCIAL BLOCK ***********************/
 .social_block { background: #48b7ce url(images/bkg_02.png) top left no-repeat; }

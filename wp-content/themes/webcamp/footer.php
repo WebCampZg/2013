@@ -1,19 +1,19 @@
 
+
 		<div class="sponsors_block">
 			<div class="inner_wrap">
 
+                <?php include __DIR__ . '/sponsors-data.php'; ?>
+            
 				<div class="main">
-					<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/net_gen.png" alt="" /></a>
-					<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/dobar_kod.png" alt="" /></a>
+                    <?php foreach ($sponsorsBig as $sponsor) { ?>
+					<a href="<?= $sponsor['url'] ?>" target="_blank"><img src="<?php bloginfo("template_directory") ?>/<?= $sponsor['logo'] ?>" alt="<?= $sponsor['title'] ?>" title="<?= $sponsor['title'] ?>" /></a>
+                    <?php } ?>
 				</div>
-
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/trikoder.png" alt="" /></a>
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/log_it.png" alt="" /></a>
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/adobe.png" alt="" /></a>
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/hgk.png" alt="" /></a>
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/microsoft.png" alt="" /></a>
-				<a href="#" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/sponsors/active_collab.png" alt="" /></a>
-
+                
+                <?php foreach ($sponsorsSmall as $sponsor) { ?>
+					<a href="<?= $sponsor['url'] ?>" target="_blank"><img src="<?php bloginfo("template_directory") ?>/<?= $sponsor['logo'] ?>" alt="<?= $sponsor['title'] ?>" title="<?= $sponsor['title'] ?>" /></a>
+                <?php } ?>
 			</div>
 		</div>
 
