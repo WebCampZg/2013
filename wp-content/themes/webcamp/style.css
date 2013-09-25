@@ -83,6 +83,8 @@ a:hover { color: #ab5416; }
 body { font-family: 'Roboto', Arial, sans-serif; font-weight: 300; }
 .lectures_block h2,
 .fluid_grid .box p strong,
+.organizers_block h2,
+.sponsors_block h2,
 #page_head .intro h2 { font-family: 'Roboto Slab', Georgia, serif; font-weight: 400; }
 
 /*********** GENERAL ***********************/
@@ -364,8 +366,9 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 }
 
 /*********** SPONSORS BLOCK ***********************/
-.sponsors_block { background: #fff; }
-.sponsors_block .inner_wrap { text-align: center; padding: 30px 20px; }
+.sponsors_block { background: #fff; border-top: 5px solid #f5f5f5; }
+.sponsors_block .inner_wrap { text-align: center; padding: 50px 20px; }
+.sponsors_block h2 { font-size: 30px; color: #7f7f7f; font-weight: normal; margin-bottom: 30px; }
 .sponsors_block .main { margin-bottom: 30px; }
 .sponsors_block a { display: inline-block; vertical-align: middle; padding: 10px; margin: 5px; transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; }
 .sponsors_block a:hover { opacity: .5; }
@@ -375,7 +378,22 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 
 @media screen and (max-width: 400px) {
   .sponsors_block a { padding: 10px 0; }
+  .sponsors_block h2 { font-size: 24px; }
   .sponsors_block .main img { margin: 0; }
+}
+
+/*********** ORGANIZERS BLOCK ***********************/
+.organizers_block { background: #fff; }
+.organizers_block .inner_wrap { text-align: center; padding: 50px 20px; }
+.organizers_block h2 { font-size: 30px; color: #7f7f7f; font-weight: normal; margin-bottom: 30px; }
+.organizers_block .main { margin-bottom: 30px; }
+.organizers_block a { display: inline-block; vertical-align: middle; padding: 10px; margin: 5px; transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; }
+.organizers_block a:hover { opacity: .5; }
+
+@media screen and (max-width: 400px) {
+  .organizers_block a { padding: 10px 0; }
+  .organizers_block h2 { font-size: 24px; }
+  .organizers_block .main img { margin: 0; }
 }
 
 /*********** SOCIAL BLOCK ***********************/

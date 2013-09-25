@@ -1,8 +1,23 @@
 
 
-		<div class="sponsors_block" id="sponzori">
+        <div class="organizers_block" id="organizatori">
 			<div class="inner_wrap">
-
+                <h2>Organizatori</h2>
+				<a href="http://codeatsix.infinum.hr/meetup" target="_blank" title="Code at Six"><img src="<?php bloginfo("template_directory") ?>/images/organizers/code_at_six.png" alt="Code at Six" /></a>
+                <a href="http://croatia.girlgeekdinners.com/" title="Girl Geek Dinners" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/girl_geek_dinners.png" alt="Girl Geek Dinners" /></a>
+                <a href="http://www.frontman-hr.org/" title="Frontman HR" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/frontman_hr.png" alt="Frontman HR" /></a>
+                <a href="http://www.mscommunity.hr/" title="FutureDEV" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/ms_community.png" alt="FutureDEV" /></a>
+                <a href="http://hujak.hr/" title="HUJAK" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/hujak.png" alt="HUJAK" /></a>
+                <a href="http://www.meetup.com/JavaScript-Zagreb/" title="Javascript Zagreb" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/javascriptzagreb.png" alt="Javascript Zagreb" /></a>
+				<a href="https://groups.google.com/forum/?fromgroups=#!forum/python-hr" title="Python Hrvatska" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/python_hr.png" alt="Python Hrvatska" /></a>
+				<a href="http://zgphp.org/" title="ZgPHP" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/zgphp.png" alt="ZgPHP" /></a>
+			</div>
+		</div>
+        
+		<div class="sponsors_block" id="sponzori">
+            <div class="inner_wrap">
+                <h2>Sponzori</h2>
+                
                 <?php include __DIR__ . '/sponsors-data.php'; ?>
             
 				<div class="main">
@@ -17,6 +32,7 @@
 			</div>
 		</div>
 
+        
 		<div class="social_block">
 			<div class="inner_wrap">
 
@@ -30,9 +46,10 @@
 
 		<footer id="page_footer">
 			<p>Copyright 2013. Webcamp Zagreb. Design &amp; development: <a href="http://www.trikoder.hr/">Trikoder</a></p>
+            <p>Hosted by: <a href="http://www.dobarkod.hr/">Dobar Kod</a></p>
 		</footer>
 
-	</div>
+    </div>
 
 	<script>
 		new wczg.main();
