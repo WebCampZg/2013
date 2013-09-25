@@ -86,7 +86,7 @@
                     'track' => $track,
                     'level' => $custom['wpcf-level'][0],
                     'url' => get_post_permalink($post->ID),
-                    'thumbnail' => get_the_post_thumbnail($post->ID),
+                    'thumbnail' => get_the_post_thumbnail($post->ID, 'thumbnail'),
                 );
 
                 $talks[] = $talk;
