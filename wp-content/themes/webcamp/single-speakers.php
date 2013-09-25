@@ -25,9 +25,10 @@
                         <div style="float: left; margin-right: 10px">
                             <?php the_post_thumbnail('thumbnail'); ?>
                         </div>
-						<h2><?php the_title(); ?></h2>
+						<h1><?php the_title(); ?></h1>
 
 						<div class="detail_view">
+							<?php the_content(); ?>
                             <aside class="social cf">
 								<div class="fb">
 									<div class="fb-like" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
@@ -37,19 +38,20 @@
 								</div>
 							</aside>
 
-							<?php the_content(); ?>
-                            
                             <div style="clear: both"></div>
-                            
+
                             <h2><?= $title ?></h2>
-                            
+
                             <p><?= wpautop($abstract) ?></p>
-                            
-                            <p>Nivo: <?= $level ?></p>
+
+                            <p><strong>Nivo predavanja:</strong> <?= $level ?></p>
+
+                            <div class="navigation">
+                                <p class="nav-prev"><?php previous_post_link(); ?></p>
+                                <p class="nav-next"><?php next_post_link(); ?></p>
+                            </div>
 						</div>
-
 					</article>
-
 				</div>
 			</div>
 

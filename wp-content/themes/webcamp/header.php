@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	
+
 	<meta charset="utf-8">
 	
 	<meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
@@ -11,9 +11,13 @@
 	<title><?php bloginfo('name'); ?> <?php wp_title(); ?></title>
 
 	<?php wp_head(); ?>
-
+	
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+	<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css" />
+	<!--[if lte IE 8]>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.ie.css" />
+	<![endif]-->
 </head>
 
 <body <?php body_class(); ?>>

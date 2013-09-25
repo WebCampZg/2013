@@ -20,7 +20,7 @@ function add_scripts_and_styles() {
 	wp_register_script( 'twitter', '//platform.twitter.com/widgets.js', array(), 1.0, false );
 	wp_register_style( 'global', get_template_directory_uri() . '/style.css', null, 1.0, 'screen' );
 	wp_register_style( 'font1', '//fonts.googleapis.com/css?family=Roboto:300,400,700&subset=latin,latin-ext' );
-	wp_register_style( 'font2', '//fonts.googleapis.com/css?family=Arvo:400' );
+	wp_register_style( 'font2', '//fonts.googleapis.com/css?family=Roboto+Slab&subset=latin,latin-ext' );
 	wp_register_style( 'icons', get_template_directory_uri() . '/font/css/webcampzg.css' );
 
 	wp_enqueue_script( 'global' );

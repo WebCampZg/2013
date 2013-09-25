@@ -83,7 +83,7 @@ a:hover { color: #ab5416; }
 body { font-family: 'Roboto', Arial, sans-serif; font-weight: 300; }
 .lectures_block h2,
 .fluid_grid .box p strong,
-#page_head .intro h2 { font-family: 'Arvo', Georgia, serif; font-weight: 400; }
+#page_head .intro h2 { font-family: 'Roboto Slab', Georgia, serif; font-weight: 400; }
 
 /*********** GENERAL ***********************/
 ::selection,
@@ -175,9 +175,10 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 #newsletter_sub p { font-size: 28px; line-height: 36px; padding: 7px 0; margin-bottom: 10px; float: left; color: #fff; }
 #newsletter_sub form { float: right; border: 3px solid #eac100; width: 327px; margin-bottom: 10px; position: relative; background: #ea670a; }
 #newsletter_sub fieldset { display: block; position: relative; padding-right: 47px; border: none; }
-#newsletter_sub form input { border: none; background: none; }
+#newsletter_sub form input { border: none; background: none; outline: none; }
 #newsletter_sub form .text { font-size: 18px; height: 43px; color: #fff; width: 100%; text-indent: 15px; }
-#newsletter_sub form .submit { position: absolute; top: 0; right: 0; bottom: 0; width: 47px; border: none; background: none; font-size: 28px; color: #eac100; cursor: pointer; transition: color 0.5s ease; -webkit-transition: color 0.5s ease; -moz-transition: color 0.5s ease; }
+#newsletter_sub form .text::-webkit-input-placeholder { color: #f5b98f; }
+#newsletter_sub form .submit { position: absolute; top: 0; right: 0; bottom: 0; width: 47px; border: none; background: none; font-size: 28px; color: #eac100; cursor: pointer; transition: color 0.5s ease; -webkit-transition: color 0.5s ease; -moz-transition: color 0.5s ease; outline: none; }
 #newsletter_sub form .submit span { display: none; }
 #newsletter_sub form .submit:hover { color: #fff; }
 #newsletter_sub form .submit:after { width: 47px; text-align: center; line-height: 43px; }
@@ -203,6 +204,7 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 
 .news_block article { font-size: 14px; line-height: 24px; padding: 30px; }
 .news_block article strong { font-weight: 300; color: #7f7f7f; display: block; margin-bottom: 5px; }
+.news_block article h1 { font-size: 24px; font-weight: 600; line-height: 30px; color: #5fa6d3; margin-bottom: 15px; }
 .news_block article h2 { font-size: 20px; font-weight: 400; line-height: 30px; color: #5fa6d3; margin-bottom: 15px; }
 .news_block article h2 a { color: inherit; }
 .news_block article h2 a:hover { color: #222; }
@@ -308,6 +310,11 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 
 .touch .fluid_grid .box .data { bottom: 0px; top: auto; height: auto; }
 
+@media screen and (max-width: 550px) {
+  .fluid_grid .box p { font-size: 12px; line-height: 20px; padding: 10px 5px; }
+  .fluid_grid .box p strong { margin-bottom: 4px; }
+}
+
 /*********** LECTURES BLOCK ***********************/
 .lectures_block { background: #f5f5f5; }
 .lectures_block .inner_wrap { padding: 40px 20px 55px; position: relative; }
@@ -366,6 +373,11 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .sponsors_block img { display: block; width: 150px }
 .sponsors_block .main img { width: 250px; margin: 0 30px; }
 
+@media screen and (max-width: 400px) {
+  .sponsors_block a { padding: 10px 0; }
+  .sponsors_block .main img { margin: 0; }
+}
+
 /*********** SOCIAL BLOCK ***********************/
 .social_block { background: #48b7ce url(images/bkg_02.png) top left no-repeat; }
 .social_block .inner_wrap { text-align: center; padding: 40px 20px; }
@@ -394,3 +406,12 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .paging .prev a:after,
 .paging .next a:after { position: absolute; top: 0; left:0; font-size: 20px; }
 .paging .next a:after { left: auto; right: 0; }
+
+/*********** MAP ***********************/
+#mapdiv { width: 100%; height: 400px; margin-top: 200px; }
+
+/*********** NAVIGATION ***********************/
+.navigation .nav-prev { float: left; margin-left: 30px; }
+.navigation .nav-next { float: right; margin-right: 30px; }
+.navigation { margin-top: 40px }
+.navigation:after { clear: both; }

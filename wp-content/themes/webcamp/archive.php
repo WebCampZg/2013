@@ -13,10 +13,12 @@
 						<?php the_content('opširnije'); ?>
 					</article>
 					<?php endwhile; ?>
+					<?php if(get_next_posts_link() || get_previous_posts_link()): ?>
 					<div class="paging">
 						<span class="prev"><?php next_posts_link('Prethodna') ?></span>
 						<span class="next"><?php previous_posts_link('Sljedeća') ?></span>
 					</div>
+					<?php endif; ?>
 					<?php else: ?>
 					<article>
 						<h2>Pogreška</h2>
