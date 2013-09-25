@@ -43,7 +43,7 @@
                             
                             <h2><?= $title ?></h2>
                             
-                            <p><?= $abstract ?></p>
+                            <p><?= wpautop($abstract) ?></p>
                             
                             <p>Nivo: <?= $level ?></p>
 						</div>
