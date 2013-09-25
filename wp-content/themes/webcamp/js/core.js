@@ -115,7 +115,11 @@ wczg.std_gallery_controller  = function(data){
             }           
         }
 
-        if(!obj.wrap.is('.col_'+obj.col_count) && obj.col_count != 7 && obj.col_count != 5){
+		if( obj.col_count == 7 || obj.col_count == 5 ) {
+			obj.col_count = obj.col_count - 1;
+		}
+
+        if(!obj.wrap.is('.col_'+obj.col_count)){
 
             obj.set_colons();
             obj.wrap.attr('class',obj.curr_class+' col_'+obj.col_count);
