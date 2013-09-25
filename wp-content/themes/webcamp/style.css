@@ -295,6 +295,7 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .fluid_grid.col_6 .cols { width: 16.66%; }
 .fluid_grid.col_7 .cols { width: 14.28%; }
 .fluid_grid.col_8 .cols { width: 12.5%; }
+.fluid_grid.col_9 .cols { width: 11.11%; }
 
 .fluid_grid .box { overflow: hidden; }
 .fluid_grid .box,
@@ -362,8 +363,8 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 .sponsors_block a { display: inline-block; vertical-align: middle; padding: 10px; margin: 5px; transition: opacity 0.5s ease; -webkit-transition: opacity 0.5s ease; -moz-transition: opacity 0.5s ease; }
 .sponsors_block a:hover { opacity: .5; }
 
-.sponsors_block img { display: block; width: 165px }
-.sponsors_block .main img { width: 350px; margin: 0 30px; }
+.sponsors_block img { display: block; width: 150px }
+.sponsors_block .main img { width: 250px; margin: 0 30px; }
 
 /*********** SOCIAL BLOCK ***********************/
 .social_block { background: #48b7ce url(images/bkg_02.png) top left no-repeat; }

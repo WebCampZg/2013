@@ -12,7 +12,7 @@ wczg.main = function(){
     	jQuery('.fluid_grid').each(function(){
 			new wczg.std_gallery_controller({
 	            'el' : jQuery(this),
-	            'steps' : [1600,1200,1000,800,600,380]
+	            'steps' : [1600,1400,1200,1000,800,600,400,200]
 	        });    		
     	});
 
