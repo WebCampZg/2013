@@ -1,6 +1,6 @@
 
 
-		<div class="sponsors_block">
+		<div class="sponsors_block" id="sponzori">
 			<div class="inner_wrap">
 
                 <?php include __DIR__ . '/sponsors-data.php'; ?>

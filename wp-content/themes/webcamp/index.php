@@ -15,7 +15,7 @@
 				</div>
 			</section>
 
-			<div class="news_block col_3_grid">
+			<div class="news_block col_3_grid" id="novosti">
 				<div class="inner_wrap cf">
 					
 					<div class="inner_wrap_02">
@@ -98,7 +98,7 @@
             
         ?>
         
-		<div class="speaker_block">
+		<div class="speaker_block" id="predavaci">
 			<div class="fluid_grid">
 				<ul>
                     <?php foreach ($talks as $talk) { ?>
@@ -115,7 +115,7 @@
 
         <?php /* REMOVE COMMENTS TO DISPLAY SCHEDULE
 
-		<div class="lectures_block">
+		<div class="lectures_block" id="raspored">
 			<div class="inner_wrap">
 
 				<h2>Raspored predavanja</h2>

@@ -51,7 +51,7 @@
 				<?php if(is_front_page()): ?>
 				<section class="intro">
 					<h2><?php bloginfo('description'); ?></h2>
-					<p>Subota 21/04/2013 Hrvatska Gospodarska Komora Nova cesta 3, Zagreb</p>
+					<p>Subota 26/10/2013 Hypo kongresni centar, Slavonska avenija 6, Zagreb</p>
 				</section>
 				<?php endif; ?>
 
