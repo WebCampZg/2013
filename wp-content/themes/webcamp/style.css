@@ -132,7 +132,6 @@ body { color: #222; width: 100%; overflow-x: hidden; }
 #page_head nav { float: right; clear: right; margin-bottom: 40px; }
 #page_head nav li { float: left; margin-left: 50px; }
 #page_head nav a { font-size: 14px; line-height: 18px; font-weight: 400; color: #e8ca00; text-transform: uppercase; }
-#page_head nav .current-menu-item a,
 #page_head nav a:hover { color: #fff; }
 
 #page_head .intro { width: 498px; float: right; clear: right; }
