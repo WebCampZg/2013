@@ -46,7 +46,9 @@
         
             $posts = get_posts(array(
                 'posts_per_page' => -1,
-                'post_type' => 'speakers'
+                'post_type' => 'speakers',
+                'orderby' => 'title',
+                'order' => 'asc',
             ));
             
             $timeZone = new \DateTimeZone('Europe/Zagreb');
