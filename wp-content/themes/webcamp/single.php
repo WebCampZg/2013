@@ -14,7 +14,7 @@
 
 							<aside class="social cf">
 								<div class="fb">
-									<div class="fb-like" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
+									<div class="fb-like" data-href="<?php echo get_permalink(); ?>" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>
 								</div>
 								<div class="tw">
 									<a href="https://twitter.com/share" class="twitter-share-button" data-via="webcampzg">Tweet</a>
