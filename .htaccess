@@ -1,0 +1,15 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# Redirect old blog post URLs to new ones
+Redirect 301 /krecemo-s-pripremama-za-webcamp-zagreb-2013 /novosti/krecemo-s-pripremama-za-webcamp-zagreb-2013/
+Redirect 301 /postani-predavac-na-webcampu-zagreb-2013 /novosti/postani-predavac-na-webcampu-2013/
+Redirect 301 /odabrana-predavanja-za-webcamp-zagreb-2013 /novosti/odabrana-predavanja-za-webcamp-zagreb-2013/
