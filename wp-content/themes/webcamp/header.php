@@ -67,7 +67,9 @@
 				<?php if(is_front_page()): ?>
 				<section class="intro">
 					<h2><?php bloginfo('description'); ?></h2>
-					<p>Subota 26/10/2013<br /> Hypo kongresni centar, Slavonska avenija 6, Zagreb</p>
+					<p>Subota 26/10/2013<br /> 
+					Kongresni centar Hypo Expo XII<br />
+					Slavonska avenija 6, Zagreb</p>
 				</section>
 				<?php endif; ?>
 
