@@ -12,7 +12,8 @@
 	<meta property="og:title" content="<?php bloginfo('name'); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<meta property="og:url" content="<?php echo get_permalink(); ?>" />
-
+	<meta property="fb:admins" content="500311732" />
+	<meta property="fb:app_id" content="109327652555691"/>
 	<!-- Naći ne-prozirni logo za ovo? -->
 	<!--<meta property="og:image" content="" />-->
 
