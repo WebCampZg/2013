@@ -29,7 +29,7 @@
 
         L.marker([lat, lon])
           .addTo(map)
-          .bindPopup("<strong>Hypo centar</strong><br />Slavonska avenija 6")
+          .bindPopup("<strong>Kongresni centar Hypo Expo XII</strong><br />Slavonska avenija 6")
           .openPopup();
     });
 </script>
