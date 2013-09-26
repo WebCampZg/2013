@@ -11,7 +11,7 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="<?php bloginfo('name'); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
-	<meta property="og:url" content="<?php bloginfo('url'); ?>" />
+	<meta property="og:url" content="<?php echo get_permalink(); ?>" />
 
 	<!-- Naći ne-prozirni logo za ovo? -->
 	<!--<meta property="og:image" content="" />-->
