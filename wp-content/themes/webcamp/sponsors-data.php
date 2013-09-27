@@ -59,68 +59,11 @@ $sponsorsSmall = array(
         'logo' => 'images/sponsors/revolucija-300x120.png',
         'title' => 'Studio Revolucija'
     ),
-    
-    // --
-
-    /*
     array(
-        'url' => 'http://www.aduro.hr/',
-        'logo' => 'images/sponsors/aduro-300x120.png',
-        'title' => 'Aduro Idea'
+        'url' => 'http://www.shoutem.com/',
+        'logo' => 'images/sponsors/shoutem-300x120.png',
+        'title' => 'Shoutem'
     ),
-    array(
-        'url' => 'http://www.locastic.com/',
-        'logo' => 'images/sponsors/locastic-300x120.png',
-        'title' => 'Locastic'
-    ),
-    array(
-        'url' => 'http://www.orangehilldev.com/',
-        'logo' => 'images/sponsors/orangehill-300x120.png',
-        'title' => 'Orange Hill'
-    ),
-    array(
-        'url' => 'http://www.github.com/',
-        'logo' => 'images/sponsors/github-300x120.png',
-        'title' => 'Github'
-    ),
-    array(
-        'url' => 'http://www.code4hire.com/',
-        'logo' => 'images/sponsors/code4hire-300x120.png',
-        'title' => 'code4hire'
-    ),
-    array(
-        'url' => 'http://neutrinodev.com/',
-        'logo' => 'images/sponsors/neutrino-300x120.png',
-        'title' => 'Neutrino'
-    ),
-    array(
-        'url' => 'http://www.limundo.com/',
-        'logo' => 'images/sponsors/limundo-300x120.png',
-        'title' => 'Limundo'
-    ),
-    array(
-        'url' => 'http://www.seekandhit.com/',
-        'logo' => 'images/sponsors/seekandhit-300x120.png',
-        'title' => 'SeekandHit'
-    ),
-    array(
-        'url' => 'http://www.njuskalo.hr/',
-        'logo' => 'images/sponsors/njuskalo-300x120.png',
-        'title' => 'Njuškalo'
-    ),
-   
-    array(
-        'url' => 'http://www.jetbrains.com/',
-        'logo' => 'images/sponsors/jetbrains-300x120.png',
-        'title' => 'JetBrains'
-    ),
-    array(
-        'url' => 'http://nivas.hr/',
-        'logo' => 'images/sponsors/nivas-300x120.png',
-        'title' => 'Nivas'
-    ),
-    */
-
 );
 
 shuffle($sponsorsBig);
