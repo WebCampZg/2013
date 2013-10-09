@@ -104,50 +104,6 @@
 			</div>
 		</div>
 
-        <?php /* REMOVE COMMENTS TO DISPLAY SCHEDULE
-
-		<div class="lectures_block" id="raspored">
-			<div class="inner_wrap">
-
-				<h2>Raspored predavanja</h2>
-
-				<strong class="mark h_a">Dvorana <b>A</b></strong>
-				<strong class="mark h_b">Dvorana <b>B</b></strong>
-
-				<ul>
-					<li>
-						<article>
-							<time>09:00</time>
-							<p>Akreditacije i druženje</p>
-						</article>
-					</li>
-					<li>
-						<article>
-							<time>09:30</time>
-							<p>Otvaranje konferencije</p>
-						</article>
-					</li>
-
-                    <?php foreach($schedule as $time => $timeTalks) { ?>
-					<li>
-						<article>
-							<time><?= $time ?></time>
-                            <?php foreach($timeTalks as $track => $talk) { ?>
-							<div class="hall_<?= $track == 1 ? 'a' : 'b' ?>">
-								<p>
-									<a href="<?= $talk->url ?>">
-										<?= $talk->title ?>
-										<strong><?= $talk->speaker ?></strong>
-									</a>
-								</p>
-							</div>
-                            <?php } ?>
-						</article>
-					</li>
-                    <?php } ?>
-				</ul>
-			</div>
-		</div>
-        */ ?>
+		<?php include __DIR__ . '/schedule.php'; ?>
 
 <?php get_footer(); ?>
