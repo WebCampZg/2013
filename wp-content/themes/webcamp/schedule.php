@@ -268,7 +268,7 @@
 
             <li>
                 <article>
-                    <time>16:15</time>
+                    <time>17:00</time>
                     <div class="hall_b">
                         <p>
                             <a href="/speakers/marko-elezovic/">
@@ -289,7 +289,7 @@
 
             <li>
                 <article>
-                    <time>16:45</time>
+                    <time>17:30</time>
                     <div class="hall_b">
                         <p>
                             <a href="/speakers/goran-peretin/">
@@ -305,6 +305,13 @@
                             </a>
                         </p>
                     </div>
+                </article>
+            </li>
+            
+            <li>
+                <article>
+                    <time>18:00</time>
+                    <p>Završna riječ</p>
                 </article>
             </li>
         </ul>
