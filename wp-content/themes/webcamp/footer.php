@@ -1,11 +1,10 @@
-
         <div class="organizers_block" id="organizatori">
 			<div class="inner_wrap">
                 <h2>Organizatori</h2>
 				<a href="http://codeatsix.infinum.hr/meetup" target="_blank" title="Code at Six"><img src="<?php bloginfo("template_directory") ?>/images/organizers/code_at_six.png" alt="Code at Six" /></a>
                 <a href="http://croatia.girlgeekdinners.com/" title="Girl Geek Dinners" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/girl_geek_dinners.png" alt="Girl Geek Dinners" /></a>
                 <a href="http://www.frontman-hr.org/" title="Frontman HR" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/frontman_hr.png" alt="Frontman HR" /></a>
-                <a href="http://kset.org/" title="KSET" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/kset.png" alt="KSET" /></a>
+                <a href="http://kset.org/" title="KSET" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/kset.png" alt="KSET" style="width: 120px" /></a>
                 <br />
                 <a href="http://www.mscommunity.hr/" title="FutureDEV" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/ms_community.png" alt="FutureDEV" /></a>
                 <a href="http://hujak.hr/" title="HUJAK" target="_blank"><img src="<?php bloginfo("template_directory") ?>/images/organizers/hujak.png" alt="HUJAK" /></a>
