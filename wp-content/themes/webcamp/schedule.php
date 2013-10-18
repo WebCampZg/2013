@@ -125,7 +125,7 @@
                     <div class="hall_b">
                         <p>
                             <a href="/speakers/sasa-juric/">
-                            Elixir, Erlang, i skalabilni web sustavi
+                            Elixir, Erlang, i visoko dostupni serverski sustavi
                             <strong>Saša Jurić</strong></a>
                         </p>
                     </div>
