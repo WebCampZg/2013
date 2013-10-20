@@ -9,7 +9,7 @@
         <ul>
             <li>
                 <article>
-                    <time>09:00</time>
+                    <time>08:30</time>
                     <p>Akreditacije i druženje</p>
                 </article>
             </li>
