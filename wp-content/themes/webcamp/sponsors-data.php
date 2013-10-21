@@ -69,9 +69,12 @@ $sponsorsSmall = array(
         'logo' => 'images/sponsors/njuskalo-300x120.png',
         'title' => 'Njuškalo'
     ),
+    array(
+        'url' => 'http://www.metronet.hr/',
+        'logo' => 'images/sponsors/metronet-300x120.png',
+        'title' => 'Metronet'
+    ),
 );
 
 shuffle($sponsorsBig);
 shuffle($sponsorsSmall);
-
-?>
