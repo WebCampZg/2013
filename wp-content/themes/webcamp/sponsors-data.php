@@ -64,6 +64,11 @@ $sponsorsSmall = array(
         'logo' => 'images/sponsors/shoutem-300x120.png',
         'title' => 'Shoutem'
     ),
+    array(
+        'url' => 'http://www.njuskalo.hr/',
+        'logo' => 'images/sponsors/njuskalo-300x120.png',
+        'title' => 'Njuškalo'
+    ),
 );
 
 shuffle($sponsorsBig);
