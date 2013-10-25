@@ -14,6 +14,7 @@
 	<meta property="og:url" content="<?php echo get_permalink(); ?>" />
 	<meta property="og:image" content="http://2013.webcampzg.org/wp-content/uploads/2013/09/facebook.jpg" />
 	
+	<meta name="apple-itunes-app" content="app-id=726115644" />
 	
 	<meta property="fb:admins" content="500311732" />
 	<meta property="fb:app_id" content="722382704443005"/>
